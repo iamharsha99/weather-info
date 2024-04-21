@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-size: 3rem;
+}
+
+#cityName {
+    height: 30px;
+    width: 250px;
+    border-radius: 15px;
+    font-size: x-large;
+    margin: 5px;
+}
+
+#searchBtn {
+    width: 150px;
+    height: 40px;
+    font-size: large;
+    border-radius: 15px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    padding: 3px;
+}
+
+#searchBtn:hover {
+    background-color: lightgreen;
+    border: 5px solid black;
+    color: black;
+}
+
+#weatherCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    width: 350px;
+    position: relative;
+}
+
+#loadingSpinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #000000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#name {
+    font-size: 40px;
+}
+
+#weatherDesc {
+    font-size: x-large;
+}
+
+.temperatures,
+.properties {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    margin: 10px;
+}
+
+#weatherIcon {
+    font-size: 120px;
+    text-align: center;
+}
+
+.tempCard,
+.propCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.tempType {
+    font-size: 10px;
+    margin: 0;
+    color: lightgrey;
+}
+
+#low,
+#high {
+    font-size: larger;
+    margin: 0;
+    color: lightslategray;
+}
+
+#mainTemp {
+    font-size: xx-large;
+}
+
+.prop {
+    font-size: medium;
+    margin: 2px;
+    color: lightgrey;
+}
+
+#pressure,
+#wind,
+#humidity {
+    font-size: x-large;
+    margin: 0;
+}
+
+#sunrise,
+#sunset {
+    margin: 0;
+    font-size: x-large;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.loading {
+    display: block;
+}
+
+#error {
+    color: red;
+    margin-top: 10px;
+}

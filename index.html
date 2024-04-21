@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weather Info</h1>
+    <input type="text" placeholder="Enter City" id="cityName">
+    <button id="searchBtn">Get Weather</button>
+    <div id="weatherCard" class="hidden">
+        <div id="loadingSpinner" class="loading"></div>
+        <h2 id="name">Hyderabad</h2>
+        <div id="weatherIcon">☀️</div>
+        <div id="weatherDesc">Haze</div>
+        <div class="temperatures">
+            <div class="tempCard">
+                <p class="tempType">Low❄️</p>
+                <p id="low">34°C</p>
+            </div>
+            <div class="tempCard">
+                <p id="mainTemp">34°C</p>
+            </div>
+            <div class="tempCard">
+                <p class="tempType">High☀️</p>
+                <p id="high">34°C</p>
+            </div>
+        </div>
+        <div class="properties">
+            <div class="propCard">
+                <p class="prop">Humidity💧</p>
+                <p id="humidity">8%</p>
+            </div>
+            <div class="propCard">
+                <p class="prop">Wind💨</p>
+                <p id="wind">8%</p>
+            </div>
+            <div class="propCard">
+                <p class="prop">Pressure🌀</p>
+                <p id="pressure">8%</p>
+            </div>
+        </div>
+        <div class="properties">
+            <div class="propCard">
+                <p class="prop">SunRise🌅</p>
+                <p id="sunrise">05:45AM</p>
+            </div>
+            <div class="propCard">
+                <p class="prop">SunSet🌇</p>
+                <p id="sunset">07:20PM</p>
+            </div>
+        </div>
+    </div>
+    <div id="error"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
